@@ -4,9 +4,18 @@ import { UIContext } from "../../context/UIContext";
 import { HashLink } from "react-router-hash-link";
 import useScrollDirection from "../../hooks/scrollDirection";
 import { MenuOpen } from "@mui/icons-material";
-import { IconButton, SvgIcon, Backdrop, Drawer } from "@mui/material";
+import {
+  IconButton,
+  SvgIcon,
+  Drawer,
+  Box,
+  List,
+  ListItem,
+  Link,
+} from "@mui/material";
 import { ReactComponent as HomeIcon } from "../../assets/personal_logo.svg";
 import customTheme from "../../materialUI/customTheme";
+// import { Link } from "react-router-dom";
 
 const Navbar = () => {
   // const { theme, setTheme } = useContext(UIContext);
@@ -22,10 +31,10 @@ const Navbar = () => {
       <div className="header_leftContainer">
         <SvgIcon
           color="primary"
-          sx={{ fontSize: 48, display: "flex" }}
-          htmlColor="#5bc2e7"
+          sx={{ display: "flex" }}
+          // htmlColor="#5bc2e7"
         >
-          <HashLink to="/#hero" smooth>
+          <HashLink to="/#hero">
             <HomeIcon />
           </HashLink>
         </SvgIcon>
@@ -37,18 +46,51 @@ const Navbar = () => {
           onClick={() => {
             setOverlayState((currentVal) => !currentVal);
           }}
-          sx={{ zIndex: (customTheme) => customTheme.zIndex.drawer + 1 }}
+          sx={{
+            zIndex: (customTheme) => customTheme.zIndex.drawer + 1,
+          }}
         >
           <MenuOpen />
         </IconButton>
       </div>
       {overlayActive && (
-      // <Backdrop open={true}>HI</Backdrop>
-      <Drawer anchor="right" open={true} onClose={() => {
-        setOverlayState((currentVal) => !currentVal);
-      }}>Hi</Drawer>
-      )
-      }
+        // <Backdrop open={true}>HI</Backdrop>
+        <Drawer
+          anchor="right"
+          open={true}
+          onClose={() => {
+            setOverlayState((currentVal) => !currentVal);
+          }}
+        >
+          <Box
+            sx={{
+              width: "70vw",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              margin: "auto 0",
+            }}
+          >
+            <List>
+              {["Home", "About", "Projects", "Contact"].map((item) => (
+                <ListItem
+                  sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <Link href={`#${item}`} underline="none" smooth>
+                    &#60;<span className="navbar_overlayText">{item}</span>
+                    &#47;&#62;
+                  </Link>
+                </ListItem>
+              ))}
+            </List>
+          </Box>
+        </Drawer>
+      )}
     </nav>
   );
 };
