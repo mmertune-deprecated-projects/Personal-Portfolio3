@@ -7,3 +7,7 @@
   padding: 0;
   scroll-behavior: smooth;
 }
+
+.section-styling{
+  padding: 0 24px;
+}

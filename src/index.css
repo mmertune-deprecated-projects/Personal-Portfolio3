@@ -1,8 +1,37 @@
 /******************* 
 * Global Variables *
 *******************/
-/* :root{
-    --drk-backgrnd-clr: rgb(2, 11, 22);
+
+@font-face {
+  font-family: "futura";
+  src: local("futura") url("./assets/fonts/futura\ medium\ bt.ttf")
+    format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "futura";
+  src: local("futura") url("./assets/fonts/futura\ light\ bt.ttf")
+    format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: "futura";
+  src: local("futura") url("./assets/fonts/Futura\ Book\ font.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  /* --drk-backgrnd-clr: rgb(2, 11, 22);
     --light-backgrnd-clr: #fbfbfb;
-    --zima-blue:#5bc2e7
-} */
+    --zima-blue:#5bc2e7 */
+  --dark-gradient: linear-gradient(
+    90deg,
+    rgba(7, 32, 65, 1) 0%,
+    rgba(2, 11, 22, 1) 100%
+  );
+  --navbar-height: 56px;
+}
