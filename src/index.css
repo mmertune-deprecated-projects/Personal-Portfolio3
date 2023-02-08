@@ -1,25 +1,29 @@
 /******************* 
 * Global Variables *
 *******************/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
 
 @font-face {
-  font-family: "futura";
-  src: local("futura") url("./assets/fonts/futura\ medium\ bt.ttf")
-    format("truetype");
+  font-family: "Futura Custom";
+  src: url("./assets/fonts/futura\ light\ bt.ttf") format("truetype");
+  font-weight: light;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Futura Custom";
+  src: url("./assets/fonts/Futura\ Book\ font.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Futura Custom";
+  src: url("./assets/fonts/futura\ medium\ bt.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
-  font-family: "futura";
-  src: local("futura") url("./assets/fonts/futura\ light\ bt.ttf")
-    format("truetype");
-  font-weight: lighter;
-  font-style: normal;
-}
-@font-face {
-  font-family: "futura";
-  src: local("futura") url("./assets/fonts/Futura\ Book\ font.ttf")
-    format("truetype");
+  font-family: "Calibre";
+  src: url("./assets/fonts/CalibreRegular.otf") format("opentrue");
   font-weight: normal;
   font-style: normal;
 }

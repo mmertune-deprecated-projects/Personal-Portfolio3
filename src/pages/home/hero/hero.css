@@ -1,7 +1,12 @@
 .hero {
   width: 100vw;
-  padding-top: var(--navbar-height);
+  /* padding-top: var(--navbar-height); */
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  /* text-align: center; */
 }
 .hero_imageContainer {
   position: absolute;
@@ -12,17 +17,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: -10;
 }
 .hero_svgImage {
   width: 200px;
   height: 200px;
   position: relative;
-  left: 30px;
-  top: 70px;
-  opacity: 0.5;
+  left: 10%;
+  top: 15%;
+  opacity: 0.3;
 }
 
 .hero_text {
-  font-family: "futura";
-  font-size: 50px;
+  /* font-family: Futura Custom;
+  font-weight: normal;
+  font-size: 100px; */
 }

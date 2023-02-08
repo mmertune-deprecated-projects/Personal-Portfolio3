@@ -2,7 +2,7 @@ import { useContext } from "react";
 import "./app.css";
 import { Navbar } from "./components";
 import { UIContext } from "./context/UIContext";
-import { Hero } from "./pages/home";
+import { Hero, About } from "./pages/home";
 
 const App = () => {
   const { theme } = useContext(UIContext);
@@ -10,6 +10,7 @@ const App = () => {
     <div className={`App ${theme}`}>
         <Navbar />
         <Hero />
+        <About />
     </div>
   );
 };

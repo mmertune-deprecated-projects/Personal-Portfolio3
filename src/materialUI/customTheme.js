@@ -4,12 +4,46 @@ const theme = createTheme({
   palette: {
     mode: "dark",
     primary: {
-      main: "#fefefe",
+      main: "#fbfbfb",
     },
     secondary: {
       main: "#5bc2e7",
     },
+    tertiary: {
+      main: "#E84757",
+      contrastText: "#fbfbfb",
+    },
   },
+  typography: {
+    fontFamily: "Futura Custom",
+    header: {
+      fontSize: "2.5rem",
+      fontWeight: "bold",
+    },
+    subHeader: {
+      fontSize: "1.5rem",
+      fontWeight: "normal",
+    },
+    body: {
+      fontFamily: "Calibre",
+    },
+    button: {
+      fontFamily: "Roboto Mono",
+      fontWeight: "bold",
+    },
+  },
+
+  // components: {
+  //   MuiCssBaseline: {
+  //     styleOverrides: `
+  //     @font-face{
+  //       font-family: "futuraLocal";
+  //       src: local("futura") url(${futuraLight}) format("truetype");
+  //       font-weight: bold;
+  //       font-style: normal;
+  //     }`,
+  //   },
+  // },
 });
 
 const customTheme = createTheme(theme, {
@@ -27,6 +61,11 @@ const customTheme = createTheme(theme, {
       },
     },
   },
+  // typography: {
+  //   h1: {
+  //     fontFamily:"futuraLocal"
+  //   },
+  // },
 });
 
 export default customTheme;

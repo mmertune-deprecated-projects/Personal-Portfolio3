@@ -14,7 +14,7 @@ import {
   Link,
 } from "@mui/material";
 import { ReactComponent as HomeIcon } from "../../assets/personal_logo.svg";
-import customTheme from "../../materialUI/customTheme";
+// import customTheme from "../../materialUI/customTheme";
 // import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -32,10 +32,12 @@ const Navbar = () => {
         <SvgIcon
           color="primary"
           sx={{ display: "flex" }}
+          fill="#fefefe"
+
           // htmlColor="#5bc2e7"
         >
           <HashLink to="/#hero">
-            <HomeIcon />
+          <HomeIcon fill="#fefefe" />
           </HashLink>
         </SvgIcon>
       </div>
