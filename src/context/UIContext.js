@@ -4,23 +4,23 @@ export const UIContext = createContext(null);
 
 export const UIProvider = ({ children }) => {
   //   const [isDarkTheme, setTheme] = useState(true);
-  const [theme, setTheme] = useState("darkMode");
+  // const [theme, setTheme] = useState("darkMode");
   const [isBurgerIcon, setBurgerIcon] = useState(true);
   const [overlayActive, setOverlayState] = useState(false);
 
-  const toggleTheme = () => {
-    setTheme((currentTheme) =>
-      currentTheme === "darkMode" ? "lightMode" : "darkMode"
-    );
-  };
+  // const toggleTheme = () => {
+  //   setTheme((currentTheme) =>
+  //     currentTheme === "darkMode" ? "lightMode" : "darkMode"
+  //   );
+  // };
   return (
     <UIContext.Provider
       value={{
-        theme,
-        setTheme,
+        // theme,
+        // setTheme,
         isBurgerIcon,
         setBurgerIcon,
-        toggleTheme,
+        // toggleTheme,
         overlayActive,
         setOverlayState,
       }}

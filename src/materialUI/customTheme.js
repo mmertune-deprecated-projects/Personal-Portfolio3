@@ -24,8 +24,18 @@ const theme = createTheme({
       fontSize: "1.5rem",
       fontWeight: "normal",
     },
+    sectionHeader: {
+      fontSize: "2rem",
+      fontWeight: "normal",
+    },
+    subSectionHeader: {
+      fontFamily: "Roboto Mono",
+      fontSize: "1rem",
+      fontWeight: "bold",
+    },
     body: {
       fontFamily: "Calibre",
+      fontSize:"1rem"
     },
     button: {
       fontFamily: "Roboto Mono",

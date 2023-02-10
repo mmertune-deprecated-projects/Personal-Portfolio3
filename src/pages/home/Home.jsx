@@ -1,7 +1,16 @@
-import "./home.css"
+import "./home.css";
+import { Hero, About, Project, Contact } from ".";
+import { Navbar } from "../../components";
+
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
-export default Home
+    <>
+      <Navbar />
+      <Hero />
+      <About />
+      <Project />
+      <Contact />
+    </>
+  );
+};
+export default Home;

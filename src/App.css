@@ -10,4 +10,12 @@
 
 .section-styling{
   padding: 0 24px;
+  margin-bottom: 108px;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  height: 100%;
 }
