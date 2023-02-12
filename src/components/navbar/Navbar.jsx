@@ -29,17 +29,17 @@ const Navbar = () => {
       }`}
     >
       <div className="header_leftContainer">
-        <SvgIcon
-          color="primary"
-          sx={{ display: "flex" }}
-          fill="#fefefe"
+        <HashLink to="/#hero">
+          <SvgIcon
+            color="primary"
+            sx={{ display: "flex" }}
+            fill="#fefefe"
 
-          // htmlColor="#5bc2e7"
-        >
-          <HashLink to="/#hero">
-          <HomeIcon fill="#fefefe" />
-          </HashLink>
-        </SvgIcon>
+            // htmlColor="#5bc2e7"
+          >
+            <HomeIcon fill="#fefefe" />
+          </SvgIcon>{" "}
+        </HashLink>
       </div>
       <div>
         <IconButton
@@ -52,7 +52,7 @@ const Navbar = () => {
             zIndex: (customTheme) => customTheme.zIndex.drawer + 1,
           }}
         >
-          <MenuOpen />
+          <MenuOpen fontSize="large" />
         </IconButton>
       </div>
       {overlayActive && (

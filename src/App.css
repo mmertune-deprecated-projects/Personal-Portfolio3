@@ -16,6 +16,7 @@
 a{
   text-decoration: none;
   color: inherit;
-  width: 100%;
+  width: fit-content;
   height: 100%;
+  /* display: inline; */
 }

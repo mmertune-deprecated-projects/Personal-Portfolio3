@@ -7,7 +7,9 @@ import {
   Button,
   CardMedia,
   Box,
+  SvgIcon,
 } from "@mui/material";
+import { GitHub, Launch } from "@mui/icons-material";
 import { HashLink } from "react-router-hash-link";
 import seabnbImage from "../../../assets/seabnb.png";
 import { LineBreak } from "../../../components";
@@ -22,13 +24,13 @@ const Project = () => {
       >
         <Divider textAlign="left">Projects</Divider>
       </Typography>
-      <Card sx={{ position: "relative", zIndex: "-20", marginBottom: 4 }}>
+      <Card sx={{ position: "relative", marginBottom: 4 }}>
         <CardMedia
           component="img"
           alt="Picture"
           height="100%"
           image={seabnbImage}
-          sx={{ position: "absolute", top: "0", left: "0", zIndex: "-10" }}
+          sx={{ position: "absolute", top: "0", left: "0", zIndex: "10" }}
         />
         <Box
           sx={{
@@ -36,53 +38,46 @@ const Project = () => {
             height: "100%",
             backgroundColor: "quaternary.main",
             opacity: "0.9",
+            position: "relative",
+            zIndex: "20",
           }}
         >
-          <CardContent>
-            <Typography variant="subSectionHeader" component="h3">
-              Project Spotlight #1
-            </Typography>
-            <LineBreak />
-            <Typography variant="body" component="p">
-              This was my first attempt at creating a portfolio website. This
-              was made shortly after Learning HTML/CSS and Javascript. The
-              website includes CSS animations and CSS layout models such as CSS
-              flexbox and CSS Grid.
-            </Typography>
-          </CardContent>
+            <CardContent>
+              <Typography variant="subSectionHeader" component="h3">
+                Project Spotlight #1
+              </Typography>
+              <LineBreak />
+              <Typography variant="body" component="p">
+                This was my first attempt at creating a portfolio website. This
+                was made shortly after Learning HTML/CSS and Javascript. The
+                website includes CSS animations and CSS layout models such as
+                CSS flexbox and CSS Grid.
+              </Typography>
+              <LineBreak />
+              <div className="project_cardLinks">
+                {/* <SvgIcon
+                  color="primary"
+                  sx={{ display: "flex", marginRight: 2 }}
+                  fill="#fefefe"
+                > */}
+                <HashLink smooth to="/#hero">
+                  <GitHub fontSize="large" />
+                </HashLink>
+                {/* </SvgIcon> */}
+                {/* <SvgIcon
+                  color="primary"
+                  sx={{ display: "flex" }}
+                  fill="#fefefe"
+                > */}
+                <HashLink smooth to="/#hero">
+                  <Launch fontSize="large" />
+                </HashLink>
+              </div>
+              {/* </SvgIcon> */}
+            </CardContent>
         </Box>
       </Card>
-      <Card sx={{ position: "relative", zIndex: "-20", marginBottom: 4 }}>
-        <CardMedia
-          component="img"
-          alt="Picture"
-          height="100%"
-          image={seabnbImage}
-          sx={{ position: "absolute", top: "0", left: "0", zIndex: "-10" }}
-        />
-        <Box
-          sx={{
-            width: "100%",
-            height: "100%",
-            backgroundColor: "quaternary.main",
-            opacity: "0.9",
-          }}
-        >
-          <CardContent>
-            <Typography variant="subSectionHeader" component="h3">
-              Project Spotlight #2
-            </Typography>
-            <LineBreak />
-            <Typography variant="body" component="p">
-              This was my first attempt at creating a portfolio website. This
-              was made shortly after Learning HTML/CSS and Javascript. The
-              website includes CSS animations and CSS layout models such as CSS
-              flexbox and CSS Grid.
-            </Typography>
-          </CardContent>
-        </Box>
-      </Card>
-      <Card sx={{ position: "relative", zIndex: "-20" }}>
+      {/* <Card sx={{ position: "relative", zIndex: "-20" }}>
         <CardMedia
           component="img"
           alt="Picture"
@@ -111,7 +106,7 @@ const Project = () => {
             </Typography>
           </CardContent>
         </Box>
-      </Card>
+      </Card> */}
       {/* <Button
         variant="contained"
         color="tertiary"
