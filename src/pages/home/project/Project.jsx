@@ -13,6 +13,7 @@ import { GitHub, Launch } from "@mui/icons-material";
 import { HashLink } from "react-router-hash-link";
 import seabnbImage from "../../../assets/seabnb.png";
 import { LineBreak } from "../../../components";
+import { SpotlightCard } from "../../../components";
 
 const Project = () => {
   return (
@@ -24,7 +25,14 @@ const Project = () => {
       >
         <Divider textAlign="left">Projects</Divider>
       </Typography>
-      <Card sx={{ position: "relative", marginBottom: 4 }}>
+      <SpotlightCard
+        imgPath="/src/assets/seabnb.png"
+        cardTitle="Project Spotlight #1"
+        cardDescription="This was my first attempt at creating a portfolio website. Thiswas made shortly after Learning HTML/CSS and Javascript. Thewebsite includes CSS animations and CSS layout models such as CSSflexbox and CSS Grid."
+        githubLink="https://www.bing.com/"
+        webpageLink="https://www.google.com/"
+      />
+      {/* <Card sx={{ position: "relative", marginBottom: 4 }}>
         <CardMedia
           component="img"
           alt="Picture"
@@ -42,41 +50,30 @@ const Project = () => {
             zIndex: "20",
           }}
         >
-            <CardContent>
-              <Typography variant="subSectionHeader" component="h3">
-                Project Spotlight #1
-              </Typography>
-              <LineBreak />
-              <Typography variant="body" component="p">
-                This was my first attempt at creating a portfolio website. This
-                was made shortly after Learning HTML/CSS and Javascript. The
-                website includes CSS animations and CSS layout models such as
-                CSS flexbox and CSS Grid.
-              </Typography>
-              <LineBreak />
-              <div className="project_cardLinks">
-                {/* <SvgIcon
-                  color="primary"
-                  sx={{ display: "flex", marginRight: 2 }}
-                  fill="#fefefe"
-                > */}
-                <HashLink smooth to="/#hero">
-                  <GitHub fontSize="large" />
-                </HashLink>
-                {/* </SvgIcon> */}
-                {/* <SvgIcon
-                  color="primary"
-                  sx={{ display: "flex" }}
-                  fill="#fefefe"
-                > */}
-                <HashLink smooth to="/#hero">
-                  <Launch fontSize="large" />
-                </HashLink>
-              </div>
-              {/* </SvgIcon> */}
-            </CardContent>
+          <CardContent>
+            <Typography variant="subSectionHeader" component="h3">
+              Project Spotlight #1
+            </Typography>
+            <LineBreak />
+            <Typography variant="body" component="p">
+              This was my first attempt at creating a portfolio website. This
+              was made shortly after Learning HTML/CSS and Javascript. The
+              website includes CSS animations and CSS layout models such as CSS
+              flexbox and CSS Grid.
+            </Typography>
+            <LineBreak />
+            <div className="project_cardLinks">
+              <HashLink smooth to="/#hero">
+                <GitHub fontSize="large" />
+              </HashLink>
+
+              <HashLink smooth to="/#hero">
+                <Launch fontSize="large" />
+              </HashLink>
+            </div>
+          </CardContent>
         </Box>
-      </Card>
+      </Card> */}
       {/* <Card sx={{ position: "relative", zIndex: "-20" }}>
         <CardMedia
           component="img"
