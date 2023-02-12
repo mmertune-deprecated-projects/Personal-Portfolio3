@@ -26,7 +26,7 @@ const Project = () => {
         <Divider textAlign="left">Projects</Divider>
       </Typography>
       <SpotlightCard
-        imgPath="/src/assets/seabnb.png"
+        image="seaBnb"
         cardTitle="Project Spotlight #1"
         cardDescription="This was my first attempt at creating a portfolio website. Thiswas made shortly after Learning HTML/CSS and Javascript. Thewebsite includes CSS animations and CSS layout models such as CSSflexbox and CSS Grid."
         githubLink="https://www.bing.com/"

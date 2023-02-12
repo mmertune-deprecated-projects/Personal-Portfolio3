@@ -6,12 +6,12 @@ import { LineBreak } from "../";
 import assets from "../../assets/assets";
 
 const SpotlightCard = ({
-  imgPath,
+  image,
   cardTitle,
   cardDescription,
   githubLink,
-  webpageLink}
-) => {
+  webpageLink,
+}) => {
   return (
     <div>
       <Card sx={{ position: "relative", marginBottom: 4 }}>
@@ -19,7 +19,7 @@ const SpotlightCard = ({
           component="img"
           alt="Picture"
           height="100%"
-          image={assets.seaBnb}
+          image={assets[image]}
           sx={{ position: "absolute", top: "0", left: "0", zIndex: "10" }}
         />
         <Box
@@ -49,7 +49,7 @@ const SpotlightCard = ({
             > */}
               <HashLink
                 smooth
-                to={{ pathname: `${githubLink}`}}
+                to={{ pathname: `${githubLink}` }}
                 target="_blank"
               >
                 <GitHub fontSize="large" />
