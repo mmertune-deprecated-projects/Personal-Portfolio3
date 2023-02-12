@@ -14,7 +14,7 @@ const Hero = () => {
         <Typography variant="subHeader" component="h2">
           Software Engineer / Computer Engineer Graduate
         </Typography>
-        <HashLink smoooth to="/#Contact">
+        <HashLink smooth to="/#Contact">
           <Button
             variant="contained"
             color="tertiary"

@@ -11,10 +11,10 @@ import {
 const Contact = () => {
   return (
     <section className="project section-styling" id="Contact">
-      <Typography variant="sectionHeader" component="h2">
+      <Typography variant="sectionHeader" component="h2" sx={{ marginBottom:4 }}>
         <Divider textAlign="left">Contact Me</Divider>
       </Typography>
-      <Card sx={{ bgcolor: "rgb(7, 32, 65)" }}>
+      <Card sx={{ bgcolor: "quaternary.main" }}>
         <CardContent>
           <form name="contact" netlify netlify-honeypot="bot-field" hidden>
             <input type="text" name="name" />
