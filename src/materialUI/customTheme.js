@@ -13,9 +13,9 @@ const theme = createTheme({
       main: "#E84757",
       contrastText: "#fbfbfb",
     },
-    quaternary:{
-      main:"rgb(7, 32, 65)"
-    }
+    quaternary: {
+      main: "rgb(7, 32, 65)",
+    },
   },
   typography: {
     fontFamily: "Futura Custom",
@@ -38,14 +38,16 @@ const theme = createTheme({
     },
     body: {
       fontFamily: "Calibre",
-      fontSize:"1rem"
-      
+      fontSize: "1rem",
     },
     button: {
       fontFamily: "Roboto Mono",
       fontWeight: "bold",
     },
   },
+  // zIndex: {
+  //   drawer: "auto",
+  // },
 
   // components: {
   //   MuiCssBaseline: {

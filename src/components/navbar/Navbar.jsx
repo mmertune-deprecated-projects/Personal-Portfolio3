@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { UIContext } from "../../context/UIContext";
 import { HashLink } from "react-router-hash-link";
 import useScrollDirection from "../../hooks/scrollDirection";
-import { MenuOpen } from "@mui/icons-material";
+import { MenuOpen, Close } from "@mui/icons-material";
 import {
   IconButton,
   SvgIcon,
@@ -24,24 +24,24 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`navbar ${
-        scrollDirection === "down" ? "header header_hide" : "header_show"
-      }`}
+      // className={`navbar ${
+      //   scrollDirection === "down" ? "header header_hide" : "header_show"
+      // }`}
+      className="navbar"
     >
-      <div className="header_leftContainer">
+      <div className="navbar_leftContainer">
         <HashLink to="/#hero">
           <SvgIcon
             color="primary"
             sx={{ display: "flex" }}
             fill="#fefefe"
-
             // htmlColor="#5bc2e7"
           >
             <HomeIcon fill="#fefefe" />
-          </SvgIcon>{" "}
+          </SvgIcon>
         </HashLink>
       </div>
-      <div>
+      <div className="navbar_rightContainer">
         <IconButton
           aria-label="menu"
           color="primary"
@@ -49,7 +49,8 @@ const Navbar = () => {
             setOverlayState((currentVal) => !currentVal);
           }}
           sx={{
-            zIndex: (customTheme) => customTheme.zIndex.drawer + 1,
+            // zIndex: (customTheme) => customTheme.zIndex.drawer + 1,
+            zIndex: 1,
           }}
         >
           <MenuOpen fontSize="large" />
@@ -63,13 +64,35 @@ const Navbar = () => {
           onClose={() => {
             setOverlayState((currentVal) => !currentVal);
           }}
+          PaperProps={{sx:{backgroundColor:"quaternary.main"}}}
         >
+          <div className="navbar_closeIcon">
+            <IconButton
+              aria-label="menu"
+              color="primary"
+              onClick={() => {
+                setOverlayState((currentVal) => !currentVal);
+              }}
+              sx={{
+                // zIndex: (customTheme) => customTheme.zIndex.drawer + 1,
+                zIndex: 1,
+                width: "fit-content",
+                height:"56px",
+                display: "flex",
+                justifyContent: "right",
+              }}
+            >
+              <Close fontSize="large" />
+            </IconButton>
+          </div>
           <Box
             sx={{
               width: "70vw",
+              height: "100%",
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
+              // backgroundColor: "quaternary.main",
               alignItems: "center",
               margin: "auto 0",
             }}
