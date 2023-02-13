@@ -19,6 +19,9 @@
   ); */
   background: var(--dark-gradient-opaque);
 }
+.navbar_hide {
+  top: calc(-1 * var(--navbar-height));
+}
 .navbar_homeLogo {
   width: 40px;
   height: 40px;

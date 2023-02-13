@@ -24,10 +24,10 @@ const Navbar = () => {
 
   return (
     <nav
-      // className={`navbar ${
-      //   scrollDirection === "down" ? "header header_hide" : "header_show"
-      // }`}
-      className="navbar"
+      className={`${
+        scrollDirection === "down" ? "navbar navbar_hide" : "navbar"
+      }`}
+      // className="navbar"
     >
       <div className="navbar_leftContainer">
         <HashLink to="/#hero">
