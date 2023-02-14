@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section className="about section-styling" id="about">
       <Typography variant="sectionHeader" component="h2" sx={{ marginBottom:4 }}>
-        <Divider textAlign="left">About</Divider>
+        <Divider textAlign="left">About Me</Divider>
       </Typography>
       <Typography variant="body" component="p">
         Hello! I’m Marvens Mertune, a software developer. In May 2022, I

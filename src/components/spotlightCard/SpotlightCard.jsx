@@ -11,10 +11,11 @@ const SpotlightCard = ({
   cardDescription,
   githubLink,
   webpageLink,
+  marginBtm
 }) => {
   return (
     <div>
-      <Card sx={{ position: "relative", marginBottom: 4 }}>
+      <Card sx={{ position: "relative", marginBottom: marginBtm }}>
         <CardMedia
           component="img"
           alt="Picture"

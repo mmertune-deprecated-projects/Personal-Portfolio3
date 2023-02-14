@@ -1,3 +1,7 @@
-.contact_formContainer{
-    /* background-color: aqua; */
+.card_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
 }
