@@ -6,7 +6,7 @@ import { HashLink } from "react-router-hash-link";
 
 const Hero = () => {
   return (
-    <main className="hero section-styling" id="Hero">
+    <main className="hero section-styling" id="home">
       <div>
         <Typography variant="header" component="h1">
           Marvens Mertune
@@ -14,7 +14,7 @@ const Hero = () => {
         <Typography variant="subHeader" component="h2">
           Software Engineer / Computer Engineer Graduate
         </Typography>
-        <HashLink smooth to="/#Contact">
+        <HashLink smooth to="/#contact">
           <Button
             variant="contained"
             color="tertiary"

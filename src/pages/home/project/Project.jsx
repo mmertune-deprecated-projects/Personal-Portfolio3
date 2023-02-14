@@ -17,7 +17,7 @@ import { SpotlightCard } from "../../../components";
 
 const Project = () => {
   return (
-    <section className="project section-styling" id="Project">
+    <section className="project section-styling" id="project">
       <Typography
         variant="sectionHeader"
         component="h2"

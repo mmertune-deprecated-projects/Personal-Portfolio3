@@ -5,7 +5,7 @@ import {LineBreak} from "../../../components/"
 
 const About = () => {
   return (
-    <section className="about section-styling" id="About">
+    <section className="about section-styling" id="about">
       <Typography variant="sectionHeader" component="h2" sx={{ marginBottom:4 }}>
         <Divider textAlign="left">About</Divider>
       </Typography>

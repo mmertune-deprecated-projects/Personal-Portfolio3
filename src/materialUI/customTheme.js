@@ -6,15 +6,21 @@ const theme = createTheme({
     primary: {
       main: "#fbfbfb",
     },
+    //zima
     secondary: {
       main: "#5bc2e7",
     },
+    // red
     tertiary: {
       main: "#E84757",
       contrastText: "#fbfbfb",
     },
+    //left linear
     quaternary: {
       main: "rgb(7, 32, 65)",
+    },
+    quinary: {
+      main: "#020b16",
     },
   },
   typography: {
@@ -43,6 +49,11 @@ const theme = createTheme({
     button: {
       fontFamily: "Roboto Mono",
       fontWeight: "bold",
+    },
+    drawerText: {
+      fontFamily: "Roboto Mono",
+      fontWeight: "bold",
+      fontSize: "2rem",
     },
   },
   // zIndex: {
@@ -73,6 +84,14 @@ const customTheme = createTheme(theme, {
               : "linear-gradient(90deg,rgba(7, 32, 65, 1) 0%,rgba(2, 11, 22, 1) 100%)",
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed",
+        },
+      },
+    },
+    MuiDrawer: {
+      styleOverrides: {
+        paper: {
+          backgroundColor: theme.palette.quinary.main,
+          elevation: 0,
         },
       },
     },

@@ -35,7 +35,7 @@
   --dark-gradient: linear-gradient(
     90deg,
     rgba(7, 32, 65, 1) 0%,
-    rgba(2, 11, 22, 1) 100%
+    rgb(2, 11, 22) 100%
   );
   --dark-gradient-opaque: linear-gradient(
     90deg,

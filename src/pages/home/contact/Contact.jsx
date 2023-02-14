@@ -10,7 +10,7 @@ import {
 
 const Contact = () => {
   return (
-    <section className="project section-styling" id="Contact">
+    <section className="contact section-styling" id="contact">
       <Typography variant="sectionHeader" component="h2" sx={{ marginBottom:4 }}>
         <Divider textAlign="left">Contact Me</Divider>
       </Typography>

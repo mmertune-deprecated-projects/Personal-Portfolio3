@@ -12,10 +12,15 @@ import {
   List,
   ListItem,
   Link,
+  Typography,
 } from "@mui/material";
 import { ReactComponent as HomeIcon } from "../../assets/personal_logo.svg";
+import { ReactComponent as LeftArrow } from "../../assets/leftArrowContainer.svg";
+import { ReactComponent as Slash } from "../../assets/forwardSlashContainer.svg";
+import { ReactComponent as RightArrow } from "../../assets/rightArrowContainer.svg";
+
 // import customTheme from "../../materialUI/customTheme";
-// import { Link } from "react-router-dom";
+import { Link as RouterLink} from "react-router-dom";
 
 const Navbar = () => {
   // const { theme, setTheme } = useContext(UIContext);
@@ -30,16 +35,18 @@ const Navbar = () => {
       // className="navbar"
     >
       <div className="navbar_leftContainer">
-        <HashLink to="/#hero">
+        {/* <HashLink to=""> */}
+        <a href=".">
           <SvgIcon
             color="primary"
             sx={{ display: "flex" }}
-            fill="#fefefe"
+            // fill="#fefefe"
             // htmlColor="#5bc2e7"
           >
             <HomeIcon fill="#fefefe" />
           </SvgIcon>
-        </HashLink>
+        </a>
+        {/* </HashLink> */}
       </div>
       <div className="navbar_rightContainer">
         <IconButton
@@ -64,7 +71,7 @@ const Navbar = () => {
           onClose={() => {
             setOverlayState((currentVal) => !currentVal);
           }}
-          PaperProps={{sx:{backgroundColor:"quaternary.main"}}}
+          PaperProps={{ elevation: 0 }}
         >
           <div className="navbar_closeIcon">
             <IconButton
@@ -77,7 +84,7 @@ const Navbar = () => {
                 // zIndex: (customTheme) => customTheme.zIndex.drawer + 1,
                 zIndex: 1,
                 width: "fit-content",
-                height:"56px",
+                height: "56px",
                 display: "flex",
                 justifyContent: "right",
               }}
@@ -98,17 +105,46 @@ const Navbar = () => {
             }}
           >
             <List>
-              {["Home", "About", "Projects", "Contact"].map((item) => (
+              {["Home", "About", "Project", "Contact"].map((item) => (
                 <ListItem
                   sx={{
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
                   }}
+                  onClick={() => {
+                    setOverlayState((currentVal) => !currentVal);
+                  }}
                 >
-                  <Link href={`#${item}`} underline="none" smooth>
-                    &#60;<span className="navbar_overlayText">{item}</span>
-                    &#47;&#62;
+                  <Link
+                    to={`/#${item.toLowerCase()}`}
+                    underline="none"
+                    component={HashLink}
+                    smooth
+                    sx={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                  >
+                    <SvgIcon fontSize="16px">
+                      <LeftArrow stroke="#E84757" />
+                    </SvgIcon>
+                    <Typography
+                      variant="drawerText"
+                      component="span"
+                      sx={{ marginLeft: 2, marginRight: 2 }}
+                    >
+                      {item}
+                    </Typography>
+                    {/* <span className="navbar_overlayText">{item}
+                    </span> */}
+                    <div className="navbar_slashContainer">
+                      <Slash height="30" stroke="#E84757" />
+                    </div>
+                    <SvgIcon fontSize="16px">
+                      <RightArrow stroke="#E84757" />
+                    </SvgIcon>
                   </Link>
                 </ListItem>
               ))}
