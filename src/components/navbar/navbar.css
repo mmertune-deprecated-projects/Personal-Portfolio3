@@ -34,10 +34,20 @@
   justify-content: right;
   margin-right: 24px;
 }
-.navbar_slashContainer {
+.navbar_slashContainerBox {
   font-size: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 10px;
+}
+.navbar_slashContainerNav {
+  font-size: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10px;
+}
+.navbar_rightContainer{
+  width: 90%;
 }

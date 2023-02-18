@@ -55,6 +55,16 @@ const theme = createTheme({
       fontWeight: "bold",
       fontSize: "2rem",
     },
+    navTextContaner:{
+      fontFamily: "Roboto Mono",
+      fontWeight: "bold",
+      fontSize: "1rem",
+    },
+    navText:{
+      fontFamily: "Roboto Mono",
+      fontWeight: "bold",
+      fontSize: "1rem",
+    }
   },
   // zIndex: {
   //   drawer: "auto",

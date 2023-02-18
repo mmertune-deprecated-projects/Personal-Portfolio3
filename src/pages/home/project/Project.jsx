@@ -52,7 +52,7 @@ const Project = () => {
         <SpotlightCard
           image="seaBnb"
           cardTitle="Project Spotlight #1"
-          cardDescription="This was my first attempt at creating a portfolio website. Thiswas made shortly after Learning HTML/CSS and Javascript. Thewebsite includes CSS animations and CSS layout models such as CSSflexbox and CSS Grid."
+          cardDescription="This was my first attempt at creating a portfolio website. Thiswas made shortly after Learning HTML/CSS and Javascript. The website includes CSS animations and CSS layout models such as CSSflexbox and CSS Grid."
           githubLink="https://github.com/mmertune/SeaBNB"
           webpageLink="https://seabnb.marvensmertune.com/"
           marginBtm={0}
@@ -60,7 +60,7 @@ const Project = () => {
         <SpotlightCard
           image="jotter"
           cardTitle="Project Spotlight #2"
-          cardDescription="This was my first attempt at creating a portfolio website. Thiswas made shortly after Learning HTML/CSS and Javascript. Thewebsite includes CSS animations and CSS layout models such as CSSflexbox and CSS Grid."
+          cardDescription="This was my first attempt at creating a portfolio website. Thiswas made shortly after Learning HTML/CSS and Javascript. The website includes CSS animations and CSS layout models such as CSSflexbox and CSS Grid."
           githubLink="https://www.bing.com/"
           webpageLink="https://www.google.com/"
           marginBtm={0}
