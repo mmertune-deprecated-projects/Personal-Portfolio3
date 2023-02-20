@@ -33,19 +33,21 @@ const Contact = () => {
               className="contact_formContainer"
               name="contact"
               method="POST"
-              netlify>
-              <input type="hidden" name="form-name" value="contact" />
+              netlify
+            >
+              {/* <input type="hidden" name="form-name" value="contact" /> */}
               {/* <div className="contact_nameEmailContainer"> */}
-                <TextField
-                  id="outlined-basic"
-                  type="text"
-                  label="Name"
-                  variant="outlined"
-                  name="name"
-                  size="small"
-                  fullWidth
-                  margin="dense"
-                />
+              <input type="hidden" name="form-name" value="contact" />
+              <TextField
+                id="outlined-basic"
+                type="text"
+                label="Name"
+                variant="outlined"
+                name="name"
+                size="small"
+                fullWidth
+                margin="dense"
+              />
               {/* </div> */}
               <TextField
                 id="outlined-basic"
