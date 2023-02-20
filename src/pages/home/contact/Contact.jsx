@@ -31,7 +31,7 @@ const Contact = () => {
               className="contact_formContainer"
               name="contact"
               method="post"
-              action="/"
+              // action="/"
             >
               <input type="hidden" name="form-name" value="contact" />
               <div className="contact_nameEmailContainer">
@@ -43,6 +43,7 @@ const Contact = () => {
               /> */}
                 <TextField
                   id="outlined-basic"
+                  type="text"
                   label="Name"
                   variant="outlined"
                   name="name"
@@ -60,6 +61,7 @@ const Contact = () => {
               </div>
               <TextField
                 id="outlined-basic"
+                type="email"
                 label="Email"
                 variant="outlined"
                 name="email"
@@ -76,6 +78,7 @@ const Contact = () => {
             /> */}
               <TextField
                 id="outlined-basic"
+                type="text"
                 label="Subject"
                 variant="outlined"
                 name="subject"
@@ -94,6 +97,7 @@ const Contact = () => {
               <TextField
                 id="outlined-multiline-static"
                 label="Message"
+                name="message"
                 multiline
                 rows={5}
                 size="small"
