@@ -41,7 +41,7 @@ const Contact = () => {
                 placeholder="Name"
                 className="contact_formName"
               /> */}
-                <TextField
+                {/* <TextField
                   id="outlined-basic"
                   type="text"
                   label="Name"
@@ -50,7 +50,7 @@ const Contact = () => {
                   size="small"
                   fullWidth
                   margin="dense"
-                />
+                /> */}
                 {/* <input
                 type="email"
                 name="email"
@@ -59,7 +59,36 @@ const Contact = () => {
                 className="contact_formEmail"
               /> */}
               </div>
-              <TextField
+              <div className="contact_nameEmailContainer">
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            className="contact_formName"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            required
+            className="contact_formEmail"
+          />
+        </div>
+        <input
+          type="text"
+          name="subject"
+          placeholder="Subject"
+          className="contact_formSubject"
+        />
+        <textarea
+          name="message"
+          placeholder="Message"
+          required
+          maxLength={250}
+          rows={10}
+          className="contact_formTxtArea"
+        ></textarea>
+              {/* <TextField
                 id="outlined-basic"
                 type="email"
                 label="Email"
@@ -68,7 +97,7 @@ const Contact = () => {
                 size="small"
                 fullWidth
                 margin="dense"
-              />
+              /> */}
 
               {/* <input
               type="text"
@@ -76,7 +105,7 @@ const Contact = () => {
               placeholder="Subject"
               className="contact_formSubject"
             /> */}
-              <TextField
+              {/* <TextField
                 id="outlined-basic"
                 type="text"
                 label="Subject"
@@ -85,7 +114,7 @@ const Contact = () => {
                 size="small"
                 fullWidth
                 margin="dense"
-              />
+              /> */}
               {/* <textarea
               name="message"
               placeholder="Message"
@@ -94,7 +123,7 @@ const Contact = () => {
               rows={10}
               className="contact_formTxtArea"
             ></textarea> */}
-              <TextField
+              {/* <TextField
                 id="outlined-multiline-static"
                 label="Message"
                 name="message"
@@ -103,7 +132,7 @@ const Contact = () => {
                 size="small"
                 fullWidth
                 margin="dense"
-              />
+              /> */}
               <Button
                 variant="contained"
                 color="tertiary"
